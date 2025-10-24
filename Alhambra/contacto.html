@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alhambra</title>
+  </head>
+  <body>
+    <hr />
+    <h1>La Alhambra de Granada</h1>
+    <img src="./assets/FotoAlhambraInicio.png" alt="Alhambra de Granada" />
+    <hr />
+
+    <a href="index.html">Inicio</a>
+    <a href="historia.html">Historia</a>
+    <a href="EnlacesExternos.html">Enlaces Externos</a>
+    <a href="contacto.html">Contacta con nuestra asociación</a>
+    <a href="Horario.html">Horarios</a>
+    <hr />
+
+    <form action="recibeform.html" method="get">
+      <label for="nombre">Nombre:</label><br />
+      <input type="text" id="nombre" name="nombre" /><br />
+
+      <label for="apellidos">Apellidos:</label><br />
+      <input type="text" id="apellidos" name="apellidos" /><br />
+
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" /><br /><br />
+
+      <div>
+        <input type="radio" id="hombre" name="sexo" value="hombre" />
+        <label for="hombre">Hombre</label><br />
+        <input type="radio" id="mujer" name="sexo" value="mujer" />
+        <label for="mujer">Mujer</label><br />
+      </div>
+      <br />
+
+      <label for="mensaje">Ingresa aquí tu mensaje:</label><br />
+      <textarea
+        id="mensaje"
+        name="mensaje"
+        rows="7"
+        cols="50"
+        placeholder="...Tu mensaje aquí..."
+      ></textarea
+      ><br />
+
+      <div>
+        <input type="checkbox" id="publicidad" name="publicidad" value="si" />
+        <label for="publicidad">
+          Deseo recibir publicidad futura en mi dirección de email.
+        </label>
+      </div>
+      <br />
+
+      <label for="procedencia">Procedencia:</label>
+      <select id="procedencia" name="procedencia">
+        <option value="espana">España</option>
+        <option value="mexico">México</option>
+        <option value="argentina">Argentina</option>
+        <option value="otro">Otro</option>
+      </select>
+      <br /><br />
+
+      <label for="archivo">Ingresa el archivo que quieras adjuntar:</label>
+      <input type="file" id="archivo" name="archivo" />
+      <br /><br />
+
+      <input type="submit" value="Enviar" />
+      <input type="reset" value="Borrar los datos" />
+    </form>
+  </body>
+</html>
