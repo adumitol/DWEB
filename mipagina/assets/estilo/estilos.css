@@ -1,0 +1,358 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #f4fafc;
+  color: #222;
+}
+
+header {
+  background-color: #b7e1e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+header img {
+  height: 100px;
+}
+
+/* Ajuste de la navegación para centrarla mejor entre el logo y los enlaces sociales */
+header nav {
+  flex-grow: 1;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  color: #007b7b;
+}
+
+/* Estilo para los enlaces de redes sociales (lado derecho) */
+header div {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+main {
+  padding: 20px 50px;
+  text-align: center;
+}
+
+main h2 {
+  color: #0a3a4a;
+  font-size: 26px;
+  margin-bottom: 25px;
+}
+
+/* REGLA SECTION: Estilo base para las secciones (sin flex) */
+section {
+  background-color: #e8f9fa;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 25px auto;
+  width: 80%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* NUEVA REGLA: Aplica Flexbox solo a la sección de destinos */
+.destinos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+/* Define el ancho de cada tarjeta (para que quepan 2) */
+section article {
+  width: 45%;
+}
+
+/* Estilos para las imágenes de las tarjetas de destino */
+section img {
+  border-radius: 5px;
+  margin-top: 10px;
+  width: 100%;
+  max-width: none;
+
+  /* Uniformidad de las imágenes */
+  height: 250px;
+  object-fit: cover;
+}
+
+/* Centrado del botón "Ver más" */
+section article a {
+  display: block;
+}
+
+section article a button {
+  display: block;
+  margin: 15px auto;
+}
+
+table {
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th,
+td {
+  border: 1px solid #aaa;
+  padding: 10px;
+}
+
+th {
+  background-color: #007b7b;
+  color: white;
+}
+
+td {
+  background-color: #f9ffff;
+}
+
+form {
+  margin-top: 15px;
+}
+
+input,
+textarea,
+select {
+  padding: 8px;
+  margin: 5px 0;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  background-color: #ff6f3c;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #ff8f5c;
+}
+
+/* --- ESTILO PARA LA LLAMADA A LA ACCIÓN (CTA) --- */
+.cta-destinos {
+  text-align: center;
+  padding: 30px 20px;
+  margin-bottom: 50px;
+}
+
+.cta-destinos p {
+  font-size: 1.1rem;
+  color: #007b7b;
+  margin-bottom: 5px;
+}
+
+.cta-destinos h2 {
+  color: #0a3a4a;
+  font-size: 2rem;
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+
+.cta-destinos button {
+  padding: 12px 30px;
+  font-size: 1.1rem;
+}
+/* ------------------------------------------------- */
+
+ul {
+  text-align: left;
+  display: inline-block;
+  margin-left: 30px;
+}
+
+ul ul {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-left: 25px;
+  list-style-type: circle;
+}
+
+a {
+  color: #007b7b;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+iframe {
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+footer {
+  background-color: #004d4d;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+/* --- ESTILOS ESPECÍFICOS PARA JAPÓN (japon.html) --- */
+
+/* Hero Banner de Japón (La imagen debe tener el texto "JAPÓN" ya incorporado) */
+.hero-japon {
+  /* !!! RECUERDA SUSTITUIR ESTA RUTA !!! */
+  background-image: url("../Banner\ japon.png");
+
+  background-size: cover;
+  background-position: center 30%;
+  height: 400px;
+  display: block;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Contenido Principal (Texto y Mujer con Paraguas) */
+.japon-contenido {
+  display: flex;
+  gap: 30px;
+  padding: 20px 50px;
+  max-width: 1200px;
+  margin: 0 auto 40px auto;
+  text-align: left;
+}
+
+.japon-contenido .texto {
+  flex: 2;
+  padding-right: 20px;
+}
+
+.japon-contenido .imagen-derecha {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+}
+
+.japon-contenido .imagen-derecha img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Títulos y Párrafos */
+.japon-contenido h2 {
+  color: #0a3a4a;
+  font-size: 22px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.japon-contenido p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Iconos de Información (3 columnas) */
+.iconos-info {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 50px;
+  max-width: 1000px;
+  margin: 0 auto 50px auto;
+  text-align: center;
+  gap: 20px;
+}
+
+.iconos-info div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.iconos-info img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.iconos-info p {
+  font-size: 14px;
+  font-weight: bold;
+  color: #007b7b;
+  line-height: 1.2;
+}
+
+/* --- MEDIA QUERY para RESPONSIVE DESIGN --- */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  header nav {
+    flex-grow: 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  section {
+    width: 95%;
+  }
+
+  /* Ajustes para la sección de destinos en móvil */
+  .destinos-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section article {
+    width: 90%;
+    margin-bottom: 15px;
+  }
+
+  /* Ajustes para la página de Japón en móvil */
+  .japon-contenido {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .japon-contenido .texto {
+    padding-right: 0;
+  }
+
+  .iconos-info {
+    flex-direction: column;
+    padding: 20px;
+    gap: 40px;
+  }
+
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+}

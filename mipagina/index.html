@@ -4,17 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./assets/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="./assets/estilo/estilos.css" />
     <title>Adumitol - Explora el mundo en grupo</title>
   </head>
   <body>
     <header>
-      <a href="index.html">
-        <img src="./assets/logo agencia de viajes.png" alt="Logo de Adumitol" />
-      </a>
-      <img
-        src="./assets/foto redes sociales.png"
-        alt="Imagen de redes sociales"
-      />
+      <a href="index.html"
+        ><img src="./assets/logo agencia de viajes.png" alt="Logo de Adumitol"
+      /></a>
       <nav>
         <ul>
           <li><a href="index.html">Inicio</a></li>
@@ -24,47 +21,54 @@
         </ul>
       </nav>
       <div>
-        <a href="https://twitter.com" target="_blank">Twitter</a>
-        <a href="https://instagram.com" target="_blank">Instagram</a>
-        <a href="https://facebook.com" target="_blank">Facebook</a>
+        <a href="https://twitter.com" target="_blank">Twitter</a
+        ><a href="https://instagram.com" target="_blank">Instagram</a
+        ><a href="https://facebook.com" target="_blank">Facebook</a>
       </div>
     </header>
-
     <main>
       <section>
         <h2>🌍 Explora el mundo en grupo</h2>
         <p>✈️ Elige el destino, nosotros ponemos los amigos</p>
         <form>
-          <label for="destino">Destino:</label>
-          <input
+          <label for="destino">Destino:</label
+          ><input
             type="text"
             id="destino"
             name="destino"
             placeholder="Destino"
-          />
-
-          <label for="fecha">Fecha:</label>
-          <input type="text" id="fecha" name="fecha" placeholder="DD/MM/AAAA" />
-
-          <button type="submit">🔥 Reserva ahora</button>
+          /><label for="fecha">Fecha:</label
+          ><input
+            type="text"
+            id="fecha"
+            name="fecha"
+            placeholder="DD/MM/AAAA"
+          /><button type="submit">🔥 Reserva ahora</button>
         </form>
       </section>
-
-      <section>
+      <section class="destinos-grid">
         <article>
           <h3>Japón</h3>
-          <a href="japon.html"><button>Ver más</button></a>
+          <a href="japon.html"
+            ><img src="./assets/japon.jpg" alt="imagen de japon" /><button>
+              Ver más
+            </button></a
+          >
         </article>
-
         <article>
           <h3>Maldivas</h3>
-          <a href="destinos.html#maldivas"><button>Ver más</button></a>
+          <a href="destinos.html#maldivas"
+            ><img
+              src="./assets/maldivas.jpg"
+              alt="imagen de maldivas"
+            /><button>Ver más</button></a
+          >
         </article>
-
-        <article>
-          <h3>Islandia</h3>
-          <a href="destinos.html#islandia"><button>Ver más</button></a>
-        </article>
+      </section>
+      <section class="cta-destinos">
+        <p>¿Interesado en más lugares exóticos?</p>
+        <h2>DESCUBRE TODOS NUESTROS DESTINOS</h2>
+        <a href="destinos.html"><button>✈️ Ver Todos los Destinos</button></a>
       </section>
     </main>
     <footer>

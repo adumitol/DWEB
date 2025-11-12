@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h2 a {
+  color: green;
+  text-decoration: none;
+}
+
+h2 a:visited {
+  color: purple;
+}
+
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 8px 15px;
+  text-align: center;
+}
+
+th {
+  background-color: #d4edda;
+}
+
+.recreo {
+  background-color: yellow;
+  font-weight: bold;
+}
+
+td:last-child:hover {
+  font-size: 22px;
+  font-weight: bold;
+  background-color: #f10101;
+  transition: all 0.3s ease;
+}
+
+input {
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+input:focus {
+  border: 2px solid black;
+  outline: none;
+}
+
+button {
+  margin-top: 10px;
+  padding: 5px 10px;
+}
