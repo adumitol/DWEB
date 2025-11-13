@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estilos CSS para formularios</title>
+    <link rel="stylesheet" href="./assets/estilos.css" />
+  </head>
+  <body>
+    <h1>Estilos CSS para formularios</h1>
+    <hr />
+
+    <form action="#" method="post" class="formulario">
+      <label for="login">Login:</label>
+      <input type="text" id="login" name="login" /><br /><br />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" /><br /><br />
+
+      <label for="descripcion">Descripción:</label>
+      <textarea
+        id="descripcion"
+        name="descripcion"
+        placeholder="Contenido inicial..."
+        rows="3"
+        cols="25"
+      ></textarea
+      ><br /><br />
+
+      <label>Posesiones:</label><br />
+
+      <input type="checkbox" name="posesion" value="casa" />
+      <label for="casa">Casa</label><br />
+      <input type="checkbox" name="posesion" value="ordenador" />
+      <label for="ordenador">Ordenador</label>
+      <br />
+      <input type="checkbox" name="posesion" value="coche" />
+      <label for="coche">Coche</label>
+      <br />
+      <input type="checkbox" name="posesion" value="moto" />
+      <label for="moto">Moto</label>
+      <br />
+      <input type="checkbox" name="posesion" value="bicicleta" />
+      <label for="bicicleta">Bicicleta</label>
+      <br /><br />
+
+      <label>SEXO:</label><br />
+      <input type="radio" name="sexo" value="hombre" />
+      <label for="hombre">Hombre</label>
+      <br />
+      <input type="radio" name="sexo" value="mujer" />
+      <label for="mujer">Mujer</label>
+      <br /><br />
+
+      <input type="submit" value="Enviar" class="boton" />
+      <input type="reset" value="Vaciar" class="boton" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 30px;
+  color: red;
+}
+
+h1 {
+  color: red;
+  font-size: 2em;
+  border-bottom: 3px solid red;
+}
+
+.formulario {
+  border: 3px dashed red;
+  padding: 15px;
+  width: 400px;
+  margin-top: 20px;
+}
+
+label {
+  display: inline-block;
+  width: 90px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+  border: 1px dotted red;
+  width: 150px;
+  padding: 4px;
+}
+
+.boton {
+  background-color: #ffffff;
+  border: 1px dotted red;
+  color: green;
+  padding: 4px 8px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+textarea::placeholder {
+  color: green;
+}
