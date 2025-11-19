@@ -1,0 +1,49 @@
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+}
+
+/* Estilos Base del Contenedor */
+
+.contenedor {
+  width: 180px;
+  height: 180px;
+  background-color: #3498db;
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+  border: 5px solid #2980b9;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: sans-serif;
+
+  /*
+    Aplica una transición de 0.8 segundos (0.8s) a TODAS las propiedades 
+    que cambian en el :hover, haciendo que el cambio sea suave.
+    */
+  transition: all 0.8s ease-in-out;
+}
+
+/* Estilos al hacer Hover */
+.contenedor:hover {
+  background-color: #e74c3c;
+  font-size: 24px;
+  color: #f1c40f;
+  line-height: 1.5;
+  border-radius: 50px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+  opacity: 0.8;
+  transform: scale(1.2) rotate(5deg);
+  border-color: #f39c12;
+  padding: 30px;
+}

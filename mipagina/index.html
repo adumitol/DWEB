@@ -31,21 +31,19 @@
         <h2>🌍 Explora el mundo en grupo</h2>
         <p>✈️ Elige el destino, nosotros ponemos los amigos</p>
         <form>
-          <label for="destino">Destino:</label
-          ><input
-            type="text"
-            id="destino"
-            name="destino"
-            placeholder="Destino"
-          /><label for="fecha">Fecha:</label
-          ><input
-            type="text"
-            id="fecha"
-            name="fecha"
-            placeholder="DD/MM/AAAA"
-          /><button type="submit">🔥 Reserva ahora</button>
+          <label for="destino">Destino:</label>
+          <select id="destino" name="destino">
+            <option value="" disabled selected>Selecciona un destino</option>
+            <option value="japon">Japón</option>
+            <option value="maldivas">Maldivas</option>
+            <option value="islandia">Islandia</option>
+          </select>
+          <label for="fecha">Fecha:</label>
+          <input type="date" id="fecha" name="fecha" />
+          <button type="submit">🔥 Reserva ahora</button>
         </form>
       </section>
+      <h2>Nuestros Destinos mas Populares</h2>
       <section class="destinos-grid">
         <article>
           <h3>Japón</h3>
@@ -57,7 +55,7 @@
         </article>
         <article>
           <h3>Maldivas</h3>
-          <a href="destinos.html#maldivas"
+          <a href="maldivas.html"
             ><img
               src="./assets/maldivas.jpg"
               alt="imagen de maldivas"

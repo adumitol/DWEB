@@ -17,7 +17,6 @@ header img {
   height: 100px;
 }
 
-/* Ajuste de la navegación para centrarla mejor entre el logo y los enlaces sociales */
 header nav {
   flex-grow: 1;
   text-align: center;
@@ -43,7 +42,6 @@ nav ul li a:hover {
   color: #007b7b;
 }
 
-/* Estilo para los enlaces de redes sociales (lado derecho) */
 header div {
   display: flex;
   gap: 15px;
@@ -61,7 +59,6 @@ main h2 {
   margin-bottom: 25px;
 }
 
-/* REGLA SECTION: Estilo base para las secciones (sin flex) */
 section {
   background-color: #e8f9fa;
   border-radius: 10px;
@@ -71,7 +68,6 @@ section {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* NUEVA REGLA: Aplica Flexbox solo a la sección de destinos */
 .destinos-grid {
   display: flex;
   flex-wrap: wrap;
@@ -79,24 +75,19 @@ section {
   gap: 20px;
 }
 
-/* Define el ancho de cada tarjeta (para que quepan 2) */
 section article {
   width: 45%;
 }
 
-/* Estilos para las imágenes de las tarjetas de destino */
 section img {
   border-radius: 5px;
   margin-top: 10px;
   width: 100%;
   max-width: none;
-
-  /* Uniformidad de las imágenes */
   height: 250px;
   object-fit: cover;
 }
 
-/* Centrado del botón "Ver más" */
 section article a {
   display: block;
 }
@@ -156,7 +147,6 @@ button:hover {
   background-color: #ff8f5c;
 }
 
-/* --- ESTILO PARA LA LLAMADA A LA ACCIÓN (CTA) --- */
 .cta-destinos {
   text-align: center;
   padding: 30px 20px;
@@ -179,20 +169,6 @@ button:hover {
 .cta-destinos button {
   padding: 12px 30px;
   font-size: 1.1rem;
-}
-/* ------------------------------------------------- */
-
-ul {
-  text-align: left;
-  display: inline-block;
-  margin-left: 30px;
-}
-
-ul ul {
-  margin-top: 5px;
-  margin-bottom: 10px;
-  margin-left: 25px;
-  list-style-type: circle;
 }
 
 a {
@@ -217,11 +193,7 @@ footer {
   font-size: 14px;
 }
 
-/* --- ESTILOS ESPECÍFICOS PARA JAPÓN (japon.html) --- */
-
-/* Hero Banner de Japón (La imagen debe tener el texto "JAPÓN" ya incorporado) */
 .hero-japon {
-  /* !!! RECUERDA SUSTITUIR ESTA RUTA !!! */
   background-image: url("../Banner\ japon.png");
 
   background-size: cover;
@@ -233,7 +205,6 @@ footer {
   overflow: hidden;
 }
 
-/* Contenido Principal (Texto y Mujer con Paraguas) */
 .japon-contenido {
   display: flex;
   gap: 30px;
@@ -244,7 +215,7 @@ footer {
 }
 
 .japon-contenido .texto {
-  flex: 2;
+  flex: 3;
   padding-right: 20px;
 }
 
@@ -260,7 +231,6 @@ footer {
   border-radius: 5px;
 }
 
-/* Títulos y Párrafos */
 .japon-contenido h2 {
   color: #0a3a4a;
   font-size: 22px;
@@ -274,7 +244,6 @@ footer {
   margin-bottom: 20px;
 }
 
-/* Iconos de Información (3 columnas) */
 .iconos-info {
   display: flex;
   justify-content: space-around;
@@ -305,7 +274,6 @@ footer {
   line-height: 1.2;
 }
 
-/* --- MEDIA QUERY para RESPONSIVE DESIGN --- */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -324,7 +292,6 @@ footer {
     width: 95%;
   }
 
-  /* Ajustes para la sección de destinos en móvil */
   .destinos-grid {
     flex-direction: column;
     align-items: center;
@@ -335,7 +302,6 @@ footer {
     margin-bottom: 15px;
   }
 
-  /* Ajustes para la página de Japón en móvil */
   .japon-contenido {
     flex-direction: column;
     padding: 20px;
@@ -355,4 +321,47 @@ footer {
     width: 100%;
     height: auto;
   }
+}
+
+.galeria-japon {
+  display: grid;
+  /* Crea una cuadrícula de 4 columnas de igual tamaño */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding: 20px 50px;
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+.galeria-japon .img-galeria {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.galeria-japon .img-galeria:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+section article {
+  width: 45%;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+section article:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+section article img {
+  border-radius: 5px;
 }
