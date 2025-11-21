@@ -4,7 +4,6 @@ body {
   background-color: #f4fafc;
   color: #222;
 }
-
 header {
   background-color: #b7e1e0;
   display: flex;
@@ -12,16 +11,13 @@ header {
   align-items: center;
   padding: 15px 30px;
 }
-
 header img {
   height: 100px;
 }
-
 header nav {
   flex-grow: 1;
   text-align: center;
 }
-
 header nav ul {
   list-style: none;
   margin: 0;
@@ -30,35 +26,29 @@ header nav ul {
   gap: 25px;
   justify-content: center;
 }
-
 nav ul li a {
   text-decoration: none;
   color: #222;
   font-weight: bold;
   font-size: 16px;
 }
-
 nav ul li a:hover {
   color: #007b7b;
 }
-
 header div {
   display: flex;
   gap: 15px;
   align-items: center;
 }
-
 main {
   padding: 20px 50px;
   text-align: center;
 }
-
 main h2 {
   color: #0a3a4a;
   font-size: 26px;
   margin-bottom: 25px;
 }
-
 section {
   background-color: #e8f9fa;
   border-radius: 10px;
@@ -67,18 +57,15 @@ section {
   width: 80%;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
-
 .destinos-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 20px;
 }
-
 section article {
   width: 45%;
 }
-
 section img {
   border-radius: 5px;
   margin-top: 10px;
@@ -87,42 +74,34 @@ section img {
   height: 250px;
   object-fit: cover;
 }
-
 section article a {
   display: block;
 }
-
 section article a button {
   display: block;
   margin: 15px auto;
 }
-
 table {
   width: 90%;
   margin: 0 auto;
   border-collapse: collapse;
   margin-top: 15px;
 }
-
 th,
 td {
   border: 1px solid #aaa;
   padding: 10px;
 }
-
 th {
   background-color: #007b7b;
-  color: white;
+  color: #fff;
 }
-
 td {
   background-color: #f9ffff;
 }
-
 form {
   margin-top: 15px;
 }
-
 input,
 textarea,
 select {
@@ -132,70 +111,59 @@ select {
   border: 1px solid #ccc;
   border-radius: 6px;
 }
-
 button {
   background-color: #ff6f3c;
-  color: white;
+  color: #fff;
   border: none;
   padding: 10px 15px;
   border-radius: 8px;
   cursor: pointer;
   font-weight: bold;
 }
-
 button:hover {
   background-color: #ff8f5c;
 }
-
 .cta-destinos {
   text-align: center;
   padding: 30px 20px;
   margin-bottom: 50px;
 }
-
 .cta-destinos p {
   font-size: 1.1rem;
   color: #007b7b;
   margin-bottom: 5px;
 }
-
 .cta-destinos h2 {
   color: #0a3a4a;
   font-size: 2rem;
   margin-top: 5px;
   margin-bottom: 25px;
 }
-
 .cta-destinos button {
   padding: 12px 30px;
   font-size: 1.1rem;
 }
-
 a {
   color: #007b7b;
 }
-
 a:hover {
   text-decoration: underline;
 }
-
 iframe {
   border-radius: 8px;
   margin-top: 15px;
 }
-
 footer {
-  background-color: #004d4d;
-  color: white;
+  /* Degradado de color */
+  background: linear-gradient(to right, #012727, #007b7b);
+  color: #fff;
   text-align: center;
   padding: 15px;
   margin-top: 40px;
   font-size: 14px;
 }
-
 .hero-japon {
-  background-image: url("../Banner\ japon.png");
-
+  background-image: url(../Banner\ japon.png);
   background-size: cover;
   background-position: center 30%;
   height: 400px;
@@ -204,7 +172,6 @@ footer {
   position: relative;
   overflow: hidden;
 }
-
 .japon-contenido {
   display: flex;
   gap: 30px;
@@ -213,37 +180,30 @@ footer {
   margin: 0 auto 40px auto;
   text-align: left;
 }
-
 .japon-contenido .texto {
   flex: 3;
   padding-right: 20px;
 }
-
 .japon-contenido .imagen-derecha {
   flex: 1;
   display: flex;
   align-items: flex-start;
 }
-
 .japon-contenido .imagen-derecha img {
   width: 100%;
   height: auto;
   border-radius: 5px;
 }
-
 .japon-contenido h2 {
   color: #0a3a4a;
   font-size: 22px;
-  margin-top: 0;
-  margin-bottom: 15px;
+  margin: 0 0 15px 0;
   text-align: left;
 }
-
 .japon-contenido p {
   line-height: 1.6;
   margin-bottom: 20px;
 }
-
 .iconos-info {
   display: flex;
   justify-content: space-around;
@@ -253,86 +213,31 @@ footer {
   text-align: center;
   gap: 20px;
 }
-
 .iconos-info div {
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .iconos-info img {
   width: 60px;
   height: 60px;
   margin-bottom: 10px;
 }
-
 .iconos-info p {
   font-size: 14px;
   font-weight: bold;
   color: #007b7b;
   line-height: 1.2;
 }
-
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-  }
-
-  header nav {
-    flex-grow: 0;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  section {
-    width: 95%;
-  }
-
-  .destinos-grid {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  section article {
-    width: 90%;
-    margin-bottom: 15px;
-  }
-
-  .japon-contenido {
-    flex-direction: column;
-    padding: 20px;
-  }
-
-  .japon-contenido .texto {
-    padding-right: 0;
-  }
-
-  .iconos-info {
-    flex-direction: column;
-    padding: 20px;
-    gap: 40px;
-  }
-
-  iframe {
-    width: 100%;
-    height: auto;
-  }
-}
-
 .galeria-japon {
   display: grid;
-  /* Crea una cuadrícula de 4 columnas de igual tamaño */
   grid-template-columns: repeat(4, 1fr);
   gap: 15px;
   padding: 20px 50px;
   max-width: 1200px;
   margin: 30px auto;
 }
-
 .galeria-japon .img-galeria {
   width: 100%;
   height: 300px;
@@ -341,27 +246,47 @@ footer {
   cursor: pointer;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
-
 .galeria-japon .img-galeria:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
   z-index: 10;
 }
-
 section article {
   width: 45%;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  background-color: white;
+  background-color: #fff;
   border-radius: 10px;
   padding: 10px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
-
 section article:hover {
   transform: scale(1.03);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
-
 section article img {
   border-radius: 5px;
+}
+.galeria-tenerife {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 20px 50px;
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+.galeria-tenerife .img-galeria {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  /* Animación al pasar el ratón */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.galeria-tenerife .img-galeria:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  z-index: 10;
 }
