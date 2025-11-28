@@ -1,0 +1,36 @@
+.galeria-productos {
+  display: flex;
+  overflow-x: scroll;
+  width: 100%;
+  scroll-snap-type: x mandatory;
+  padding: 20px 0;
+}
+
+.producto-card {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  text-align: center;
+  padding: 20px;
+  margin-right: 25px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.producto-card img {
+  max-width: 100%;
+  height: auto;
+  max-height: 150px;
+  object-fit: contain;
+}
+
+.producto-card button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}

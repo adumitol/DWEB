@@ -1,0 +1,45 @@
+.card-shadow {
+  border: 1px solid grey;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.card-gradient {
+  background: linear-gradient(to bottom, #3498db 0%, #1f587d 100%);
+  color: white;
+}
+
+.filtered-image {
+  filter: contrast(120%) brightness(80%);
+}
+
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-text {
+  position: absolute;
+  top: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 120px;
+  background-color: rgb(61, 52, 52);
+  color: white;
+
+  padding: 5px;
+  border-radius: 6px;
+
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.tooltip-container:hover .tooltip-text {
+  opacity: 1;
+}
