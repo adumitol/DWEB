@@ -1,0 +1,31 @@
+#hamburguesa {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#soyinvisible {
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+@media (max-width: 600px) {
+  #hamburguesa {
+    display: block;
+  }
+
+  #soyinvisible {
+    display: none;
+    flex-direction: column;
+    background-color: #f1a965;
+    padding: 10px;
+  }
+
+  #activador:hover #soyinvisible {
+    display: flex;
+  }
+}
