@@ -1,0 +1,153 @@
+:root {
+  --primero: rgb(220, 167, 20);
+  --segundo: rgb(150, 0, 255);
+  --fondo: rgb(230, 195, 195);
+  --texto: wheat;
+  --font-principal: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-image: url("../imagen/amigosok.jpg");
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  height: 680px;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+main div {
+  float: center;
+  background: linear-gradient(to right, var(--primero), var(--segundo));
+  width: 500px;
+  border: 2px solid var(--primero);
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+main div form {
+  padding: 20px;
+}
+
+main div form button {
+  background-color: var(--segundo);
+  color: var(--texto);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form input:valid {
+  border: 2px solid green;
+}
+
+form input:invalid {
+  border: 2px solid rgb(255, 0, 0);
+}
+
+.logo:hover {
+  transform: rotate(180deg);
+  cursor: crosshair;
+}
+
+.snoopy {
+  color: var(--segundo);
+}
+
+main p {
+  margin: 20px;
+  font-size: 1em;
+  font-family: var(--font-principal);
+}
+
+.logo {
+  height: 80px;
+  border-radius: 40px;
+  margin-right: 80%;
+  margin-top: 12px;
+  transition: transform 0.4s ease;
+}
+
+body {
+  font-family: var(--font-principal);
+  background-color: var(--fondo);
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+header,
+footer {
+  width: 100%;
+  position: fixed;
+  color: var(--texto);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  top: 0;
+  background: linear-gradient(to right, var(--primero), var(--segundo));
+  height: 80px;
+  display: flex;
+  padding: 15px 20px;
+}
+
+header nav {
+  flex-grow: 1;
+  text-align: center;
+}
+
+header nav a {
+  color: var(--texto);
+}
+
+footer {
+  bottom: 0;
+  background: radial-gradient(circle, var(--primero), var(--segundo));
+  height: 80px;
+  font-size: 0.9em;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: var(--texto);
+  font-weight: bold;
+}
+
+#hamburguesa {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#soyinvisible {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 600px) {
+  #hamburguesa {
+    display: block;
+    margin-right: 30px;
+  }
+  .soyinvisible {
+    display: none;
+    flex-direction: column;
+    padding: 10px;
+  }
+}
